@@ -1,5 +1,67 @@
-*{
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+CO:wght@100..400&display =intercambiar');
+
+
+* {
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+}
+ul,ol{
+    list-style: none;
+}
+:root {
+
+    /* colores */
+    --color-primario: #FF76CE;
+    --color-secundario: #FDFFC2;
+    --color-tercero: #FC819E;
+    --color-cuarto: #F7418F;
+
+    /* medidas */
+    --space-medium: 20px;
+    --space-small: 10px;
+
+
+    /* gradiente */
+    --gradiante-primario: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 229, 168, 1) 0%, rgba(251, 174, 222, 1) 100.7%);
+
+
+
+
+
+
+    /* fuentes */
+    --texto: "Playwrite CO";
+    --titulo: "Josefin Sans";
+
+
+
+}
+
+.primero {
+    height: 70px;
+    background: var(--color-primario);
+    display: flexbox;
+    gap: var(--space-medium);
+    font-family: var(--titulo);
+    text-align: center;
+}
+
+header nav  {
+    display: inline;
+    background: var(--color-secundario);
+    text-align: var(--texto);
+    display: flex;
+    gap: var(--space-medium);
+    justify-content: space-around;
+    font-family: var(--texto);
+}
+.catalogo img{
+width: 150px;
+height: 250px;
+border-radius: 15px;
+display: inline;
 }
