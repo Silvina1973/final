@@ -9,9 +9,12 @@
     box-sizing: border-box;
 
 }
-ul,ol{
+
+ul,
+ol {
     list-style: none;
 }
+
 :root {
 
     /* colores */
@@ -23,6 +26,7 @@ ul,ol{
     /* medidas */
     --space-medium: 20px;
     --space-small: 10px;
+    --space-maximo: 1920px;
 
 
     /* gradiente */
@@ -42,16 +46,30 @@ ul,ol{
 }
 
 .primero {
-    height: 70px;
+    height: auto;
     background: var(--color-primario);
-    display: flexbox;
+    display: flex;
     gap: var(--space-medium);
     font-family: var(--titulo);
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
-header nav  {
-    display: inline;
+.primero img {
+    background: var(--color-primario);
+    width: 100px;
+    height: 100px;
+    border: #FDFFC2 solid 3px;
+    border-radius: 50%;
+
+
+
+}
+
+header nav {
+
     background: var(--color-secundario);
     text-align: var(--texto);
     display: flex;
@@ -59,9 +77,69 @@ header nav  {
     justify-content: space-around;
     font-family: var(--texto);
 }
-.catalogo img{
-width: 150px;
-height: 250px;
-border-radius: 15px;
-display: inline;
+
+.catalogo img {
+    width: 150px;
+    height: 200px;
+    border-radius: 15px;
+    border: #F7418F solid 1.5px;
+    justify-content: space-around;
+
+
 }
+
+.info-producto p {
+    width: 150px;
+
+
+}
+
+.info-producto span {
+    color: #F7418F;
+}
+
+.catalogo button {
+    background: var(--color-primario);
+    width: 150px;
+    font-family: var(--texto);
+    border-radius: 15px;
+    border: #FC819E solid 3px;
+    margin-bottom: 30px;
+
+
+
+}
+
+.catalogo {
+    margin: var(--space-small);
+    font-family: var(--texto);
+    font-size: 10px;
+    display: flex;
+    flex-flow: wrap;
+    column-gap: 30px;
+    justify-content: space-evenly;
+
+
+}
+footer{
+    background: #F7418F;
+    height: 30px;
+    width:var(--space-maximo)
+
+}
+
+/* Media Queris */
+/* celulares */
+@media screen and (max-width:480px) {
+    .primero {
+        background: auto;
+    }
+
+
+}
+
+
+@media screen (min-whidth:481px)and (max-width:768px) {}
+
+
+@media screen (min-whidth:769px) and (max-width:1024px) {}
