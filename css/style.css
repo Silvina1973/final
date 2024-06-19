@@ -77,6 +77,11 @@ header nav {
     justify-content: space-around;
     font-family: var(--texto);
 }
+body{
+    background-color: #da05374f;
+
+
+}
 
 .catalogo img {
     width: 150px;
@@ -121,11 +126,22 @@ header nav {
 
 
 }
-footer{
-    background: #F7418F;
-    height: 30px;
-    width:var(--space-maximo)
 
+footer {
+    background: #F7418F;
+    padding: var(--space-medium);
+    width: var(--space-maximo);
+    border-radius: 60px 60px 0 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.pie-redes {
+    font-size: 2rem;
+    
 }
 
 /* Media Queris */
