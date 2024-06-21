@@ -40,9 +40,20 @@ ol {
     /* fuentes */
     --texto: "Playwrite CO";
     --titulo: "Josefin Sans";
+    
 
-
-
+}
+@keyframes delizado-izq{
+    0%{
+        transform: translateX(-100%);
+    }
+}
+.titulo-ani {
+    font-size: 2rem;
+    font-family: var(--titulo);
+    animation: delizado-izq;
+    text-align: center;
+    padding: 40px;
 }
 
 .primero {
@@ -77,9 +88,9 @@ header nav {
     justify-content: space-around;
     font-family: var(--texto);
 }
-body{
-    background-color: #da05374f;
 
+body {
+    background-color: #da05374f;
 
 }
 
@@ -130,7 +141,6 @@ body{
 footer {
     background: #F7418F;
     padding: var(--space-medium);
-    width: var(--space-maximo);
     border-radius: 60px 60px 0 0;
     justify-content: center;
     align-items: center;
@@ -140,22 +150,20 @@ footer {
 }
 
 .pie-redes {
+    display: flex;
     font-size: 2rem;
-    
+    gap: var(--space-medium);
+
 }
 
 /* Media Queris */
 /* celulares */
 @media screen and (max-width:480px) {
-    .primero {
-        background: auto;
-    }
+
+    /* tablet */
 
 
-}
+    @media screen (min-whidth:481px)and (max-width:768px) {}
 
 
-@media screen (min-whidth:481px)and (max-width:768px) {}
-
-
-@media screen (min-whidth:769px) and (max-width:1024px) {}
+    @media screen (min-whidth:769px) and (max-width:1024px) {}
