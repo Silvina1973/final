@@ -22,6 +22,10 @@ ol {
     --color-secundario: #FDFFC2;
     --color-tercero: #FC819E;
     --color-cuarto: #F7418F;
+    --color-uno: #FFE9D0;
+    --color-dos: #FFFED3;
+    --color-tres: #FFE6E6E6;
+
 
     /* medidas */
     --space-medium: 20px;
@@ -40,25 +44,27 @@ ol {
     /* fuentes */
     --texto: "Playwrite CO";
     --titulo: "Josefin Sans";
-    
+
 
 }
-@keyframes delizado-izq{
-    0%{
+
+@keyframes delizado-izq {
+    0% {
         transform: translateX(-100%);
     }
 }
+
 .titulo-ani {
     font-size: 2rem;
     font-family: var(--titulo);
-    animation: delizado-izq;
+    animation: delizado-izq 1s;
     text-align: center;
     padding: 40px;
 }
 
 .primero {
     height: auto;
-    background: var(--color-primario);
+    background: var(--color-tres);
     display: flex;
     gap: var(--space-medium);
     font-family: var(--titulo);
@@ -68,10 +74,13 @@ ol {
 
 }
 
+
+
 .primero img {
     background: var(--color-primario);
-    width: 100px;
-    height: 100px;
+    margin: 10px;
+    width: 90px;
+    height: 90px;
     border: #FDFFC2 solid 3px;
     border-radius: 50%;
 
@@ -88,9 +97,16 @@ header nav {
     justify-content: space-around;
     font-family: var(--texto);
 }
+header nav a:hover{
+    cursor: pointer;
+    color: #F7418F;
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+
+}
 
 body {
-    background-color: #da05374f;
+    background-color: var(--color-uno);
 
 }
 
@@ -154,6 +170,11 @@ footer {
     font-size: 2rem;
     gap: var(--space-medium);
 
+}
+.pie-redes a i:hover{
+    cursor: pointer;
+    color: #F7418F;
+    transform: translateY(-5px);
 }
 
 /* Media Queris */
